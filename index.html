@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"
-  />
+    <link rel ="style" href='./assets/sytlesheet.css'/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,14 +12,14 @@
   </head>
   <body>
     <body>
-        <nav class="navbar navbar-dark bg-primary mb-3">
+        <nav class="navbar navbar-light bg-light mb-3">
             <div class="container">
                 <a href="#" class="navbar-brand">Weather Dashboard</a>
             </div>
         </nav>
         <div class="container">            
             <div class="row">
-                <div class= "col-lg-3">
+               <div class= "col-lg-3">
                 <p class="lead">Search for a City:</p>
                 <input type="text" id="searchUser" class="form-control" placeholder="">
                 </div>
@@ -27,10 +28,16 @@
             <div id="profile"></div>
         </div>
         <div class="container text-left mt-2">
-            <button class="btn btn-primary" id="submit">Submit</button>
+            <button onclick= "myFunction ()" class="btn btn-dark" id="submit">Submit</button>
         </div>        
-        <div id="content">
+        <div id="content"> </div>
+        <div id="weather">
+            <div id="description"></div>
+            <h1 id="temp"></h1>
+            <div id="location"></div>
+        </div>     
+
 <script src="https://code.jquery.com/jquery.js"></script>            
-<script> src='assets/script.js'</script>
+<script src='assets/script.js'></script>
 
 </html>
