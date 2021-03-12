@@ -14,11 +14,16 @@
         )
         let data = await response.json()
         console.log(data);
+        //UV
         let uvResponse = await fetch(`http://api.openweathermap.org/data/2.5/uvi?lat=${data.coord.lat}&lon=${data.coord.lon}&appid=6e87985c0e93d8622bf6dcb03fb22522`)
         let uvData = await uvResponse.json()
-        console.log(uvData);        
-    }
-        
+        console.log(uvData); 
+        return data;
+      }
+         
+    
+     
+
        
      
     
