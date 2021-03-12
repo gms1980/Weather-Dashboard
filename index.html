@@ -10,33 +10,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  
   <body>
     <body>
-        <nav class="navbar navbar-light bg-light mb-3">
-            <div class="container">
-                <a href="#" class="navbar-brand">Weather Dashboard</a>
-            </div>
+        <div class="--Jumbotron container-fluid mt-2 text-center p-2" style="background-color:#404040; color: white;">
+            <h1>Weather Dashboard</h1>
+        </div>
         </nav>
         <div class="container">            
             <div class="row">
-               <div class= "col-lg-3">
-                <p class="lead">Search for a City:</p>
-                <input type="text" id="searchUser" class="form-control" placeholder="">
+                <div class="col-sm-4 bg-light">
+                    <!--Here we create an HTML form for handling the inputs-->
+                    <div class="sidebar-header">
+                        <h3>Search for a City:</h3>
+                    </div>    
+                    
+                    <div class="input-group mb-3">
+                        <input type="text" id="searchCity" class="form-control" placeholder="">
+                        <div class="input-group-append">
+                            <button class="btn btn-dark" id="submit">Submit</button>
+                        </div>
+                    </div>
+                
                 </div>
             </div>
             <br>
             <div id="profile"></div>
         </div>
         <div class="container text-left mt-2">
-            <button onclick= "myFunction ()" class="btn btn-dark" id="submit">Submit</button>
-        </div>        
-        <div id="content"> </div>
-        <div id="weather">
-            <div id="description"></div>
-            <h1 id="temp"></h1>
-            <div id="location"></div>
-        </div>     
-
+            
+            <div class="col-sm-8">
+                <div class="row ml-2 border border-dark rounded">
+                    <div class="col-sm-12" id="current-weather">
+                        <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                        <p>Temperature:<span class="current" id="temperature"></span></p>
+                        <p>Humidity:<span class="current" id="humidity"></span></p> 
+                        <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                        <p>UV index:<span class="current bg-danger rounded py-2 px-2 text-white" id="uv-index"></span></p> 
+                    </div>
+                </div>
+                <div class="col-sm-12" id ="future-weather">
+                    <h3>5-Day Forecast:</h3>
+                    <div class="row text-light">
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded" >
+                            <p id="Date0"></p>
+                            <p id="Img0"></p>
+                            <p>Temp:<span id="Temp0"></span></p>
+                            <p>Humidity:<span id="Humidity0"></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded" >
+                            <p id="Date1"></p>
+                            <p id="Img1"></p>
+                            <p>Temp:<span id="Temp1"></span></p>
+                            <p>Humidity:<span id="Humidity1"></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="Date2"></p>
+                            <p id="Img2"></p>
+                            <p>Temp:<span id="Temp2"></span></p>
+                            <p>Humidity:<span id="Humidity2"></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="Date3"></p>
+                            <p id="Img3"></p>
+                            <p>Temp:<span id="Temp3"></span></p>
+                            <p>Humidity:<span id="Humidity3"></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded" >
+                            <p id="Date4"></p>
+                            <p id="Img4"></p>
+                            <p>Temp:<span id="Temp4"></span></p>
+                            <p>Humidity:<span id="Humidity4"></span></p>
+                        </div>
+                
+            </div>
+        </div>
+        
+            
+    </body>
 <script src="https://code.jquery.com/jquery.js"></script>            
 <script src='assets/script.js'></script>
 
