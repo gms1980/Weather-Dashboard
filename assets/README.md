@@ -10,10 +10,11 @@ to match the date.
 *html 
 *Third Party API from Open Weather
 
-<img src="Develop/Images/Week Day Scheduler.jpg" width="400" height="450">
+<img src="assets/IMG/Weather API.jpeg" width="400" height="450">
 
 # Website
-https://gms1980.github.io/Work-Day-Scheduler/Develop/index
+ https://gms1980.github.io/Weather-Dashboard/
+
 
 
 # Made By:
