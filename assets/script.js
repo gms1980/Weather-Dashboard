@@ -37,13 +37,28 @@
         
       
       //Start a local Storage
-      var storedCities = localStorage.getItem("storedCities");
-       if(storedCities) {
-         storedCities = storedCities;
-       }
-       if(storedCitiesArray.inlcudes(location,0)){
-         storedCities
-       }
+      const storageInput = document.querySelector('.storage').
+      const text = document.querySelector('.text');
+      const button = document.querySelector('button');
+      
+      function createItem() {
+        localStorage.setItem('searchCity')
+      }
+      createItem()
+
+      function getValue(){
+        return localStorage.getItem('searchCity');
+
+      }
+      console.log(getValue());
+      
+      //   var storedCities = localStorage.getItem("storedCities");
+      //  if(storedCities) {
+      //    storedCities = storedCities;
+      //  }
+      //  if(storedCitiesArray.inlcudes(location,0)){
+      //    storedCities
+      //  }
         
        
     //5 day weather

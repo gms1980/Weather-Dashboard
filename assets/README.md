@@ -10,7 +10,7 @@ to match the date.
 *html 
 *Third Party API from Open Weather
 
-<img src="assets/IMG/Weather_API.jpeg" width="200" height="250">
+<img src="assets/IMG/Weather API.jpeg" width="200" height="250">
 
 # Website
  https://gms1980.github.io/Weather-Dashboard/
