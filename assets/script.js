@@ -33,32 +33,35 @@
         var speed = data['wind']['speed'];
         speedEl.innerHTML = speed;
 
+        var temp0El= document.querySelector('temp0');
+        var temp0 = data['dt']['time'];
+        temp0El.innerHTML = temp0;
+
+
       }
         
       
       //Start a local Storage
-      const storageInput = document.querySelector('.storage').
-      const text = document.querySelector('.text');
-      const button = document.querySelector('button');
+    //   const storageInput = document.querySelector('.storage').
+    //   const text = document.querySelector('.text');
+    //   const button = document.querySelector('button');
       
-      function createItem() {
-        localStorage.setItem('searchCity')
-      }
-      createItem()
+    //   function createItem() {
+    //     localStorage.setItem('searchCity')
+    //   }
+    //   createItem()
 
-      function getValue(){
-        return localStorage.getItem('searchCity');
+    //   function getValue(){
+    //     return localStorage.getItem('searchCity');
 
-      }
-      console.log(getValue());
-      
-      //   var storedCities = localStorage.getItem("storedCities");
-      //  if(storedCities) {
-      //    storedCities = storedCities;
-      //  }
-      //  if(storedCitiesArray.inlcudes(location,0)){
-      //    storedCities
-      //  }
+    //   }
+    //   console.log(getValue());
+    //   var search = function() {
+    //     var userInput = document.getElementById('artistSearch').value;
+    //     localStorage.setItem("search", userInput);
+    //     window.location.href = "./artist.html"
+    // }
+    // document.getElementById("searchBtn").addEventListener('click', search);
         
        
     //5 day weather
